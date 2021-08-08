@@ -1,2 +1,2 @@
 # Automate-Excel
-Python program that automates excel entries
+Python programs that automate excel functions
