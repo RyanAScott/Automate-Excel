@@ -2,15 +2,17 @@
 import pandas as pd
 
 # specify the files location (or path)
-excel_files = ['ExampleData.xlsx', 'ExampleData2.xlsx']
+excel_files = ['/Users/ryanscott/Documents/Python Practice/Automate-Excel/SampleData.xlsx', '/Users/ryanscott/Documents/Python Practice/Automate-Excel/SampleData2.xlsx']
 
 # create a blank dataframe
 merge = pd.DataFrame()
 
 # loop through every file in the list
 for file in excel_files:
-    # read files into a dataframe and skip the first row of 2nd workbook
     df = pd.read_excel(file, skiprows = 1)
+    
+    # read files into a dataframe and skip the first row of 2nd workbook
+
     # append results to merge
     merge = merge.append(df, ignore_index = True)
 
